@@ -8,6 +8,8 @@ const postRoute = require('./routes/posts');
 const categoryRoute = require('./routes/categories');
 const multer = require('multer');
 const path = require('path');
+const cors = require('cors');
+app.use(cors());
 let port = process.env.PORT || 5000;
 dotenv.config();
 app.use(express.json());
